@@ -1,0 +1,40 @@
+body{
+    background-color: azure;
+    font-family: Arial, sans-serif;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+
+fieldset{
+    width: 600px;
+    height: 350px;
+    text-align: center;
+    padding-top: 90px;
+    background-color: #5cb85cf1;
+    border-radius: 5px;
+    border-radius: 25% 10%;
+}
+
+input{
+    width: 450px;
+    height: 25px;
+    border-radius: 5px;
+    border-color: #fff;
+}
+
+button{
+    color: azure;
+    background-color: #0274d8fd;
+    width: 250px;
+    height: 30px;
+}
+
+a {
+    text-decoration:none;
+}

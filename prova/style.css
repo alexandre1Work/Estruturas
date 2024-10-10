@@ -1,0 +1,43 @@
+/* Estilos personalizados */
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header.jumbotron {
+    background: url('burgers.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+}
+
+header.jumbotron img {
+    max-width: 100%;
+    height: auto;
+}
+
+.card {
+    margin-bottom: 20px;
+}
+
+.navf {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+
+#teste3{position:relative;top:0;padding:4px;;
+    transition: all .2s ease-in-out}
+
+#teste3:hover{top:-4px;box-shadow:0 4px 3px #999}
+
+.imgProduto{
+    width: 626px;
+    height: 417px;
+}
+
+.title{
+    text-align: center;
+    font-family: Times New Roman;
+    font-size: 60px;
+}
