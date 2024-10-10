@@ -24,4 +24,15 @@ const produtosSchema = new mongoose.Schema({
     preco: Number
 })
 
-//ola
+const Produto = mongoose.model('Produto', produtoSchema)
+
+// '/produtos' é uma rota para obter todos os produtos
+app.get('/produtos', async(requisicao, resposta) => {
+    const produtos = await produtos.find()
+})
+
+app.post('/produtos', async(req, res) => {
+    const novoProduto = new Produto(req.body);
+    await produtos.save();
+    res.json(novoProduto);
+})
