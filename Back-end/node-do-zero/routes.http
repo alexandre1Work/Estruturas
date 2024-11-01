@@ -1,0 +1,26 @@
+POST http://localhost:7777/videos
+Content-Type: application/json
+
+{
+    "title": "Video NOVO",
+    "description": "Esse é o NOVO video",
+    "duration": 420
+}
+
+### 
+GET http://localhost:7777/videos
+//?search=Node
+
+###
+PUT http://localhost:7777/videos/ab3b4864-1f29-4a54-b327-b8337dfe9273
+Content-Type: application/json
+
+{
+    "title": "Video ATT",
+    "description": "Esse é o 10 video",
+    "duration": 480
+}
+
+
+###
+DELETE http://localhost:7777/videos/a5bb2075-c5df-4f4e-ad30-9bdc1842d8bb
