@@ -7,7 +7,6 @@ export class DataBasePostgres {
         let videos;
 
         if (search) {
-            // Ajuste na sintaxe para o LIKE com a interpolação correta
             videos = await sql`SELECT * FROM videos WHERE title ILIKE ${'%' + search + '%'}`;
         } else {
             videos = await sql`SELECT * FROM videos`;
@@ -19,7 +18,6 @@ export class DataBasePostgres {
         const videoId = randomUUID();
         const { title, description, duration } = video;
 
-        // Passando todos os valores como parâmetros no comando SQL
         await sql`
             INSERT INTO videos (id, title, description, duration)
             VALUES (${videoId}, ${title}, ${description}, ${duration})
